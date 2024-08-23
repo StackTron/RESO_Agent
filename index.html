@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Калькулятор прибыли агента</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор премии агента</h1>
+
+        <h2>Страховое ОСАГО</h2>
+        <input type="number" id="osago" placeholder="Стоимость полиса ОСАГО">
+        <button onclick="calculate('osago')">Рассчитать премию</button>
+        <p id="osago-result"></p>
+
+        <h2>Страховое КАСКО</h2>
+        <input type="number" id="kasko" placeholder="Стоимость полиса КАСКО">
+        <button onclick="calculate('kasko')">Рассчитать премию</button>
+        <p id="kasko-result"></p>
+
+        <h2>Свободный расчет</h2>
+        <input type="number" id="custom-amount" placeholder="Сумма">
+        <input type="number" id="custom-percent" placeholder="Процент">
+        <button onclick="calculateCustom()">Рассчитать премию</button>
+        <p id="custom-result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
